@@ -41,13 +41,25 @@ main section.categories-show {
       }
 
       aside.price {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 10px;
+          background-color: #eee;
+          border-top-right-radius: 4px;
+          border-bottom-left-radius: 20px;
+          font-size: 0.8em;
+        }
+
+      aside.sold-out {
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
         padding: 10px;
-        background-color: #eee;
-        border-top-right-radius: 4px;
-        border-bottom-left-radius: 20px;
+        color: #FFFFFF;
+        background-color: #DF9998;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 20px;
         font-size: 0.8em;
       }
 
