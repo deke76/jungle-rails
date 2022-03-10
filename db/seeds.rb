@@ -24,10 +24,9 @@ end
 ## CATEGORIES
 
 puts "Finding or Creating Categories ..."
-
-cat1 = Category.find_or_create_by! name: 'Apparel'
-cat2 = Category.find_or_create_by! name: 'Electronics'
-cat3 = Category.find_or_create_by! name: 'Furniture'
+cat1 = Category.create_with(image: 'cat_apparel.jpg').find_or_create_by!(name: 'Apparel') 
+cat2 = Category.create_with(image: 'cat_electronics.jpg').find_or_create_by!(name: 'Electronics') 
+cat3 = Category.create_with(image: 'cat_furniture.jpg').find_or_create_by!(name: 'Furniture')
 
 ## PRODUCTS
 
