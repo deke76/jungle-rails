@@ -31,10 +31,10 @@ cat3 = Category.create_with(image: 'cat_furniture.jpg').find_or_create_by!(name:
 ## EMPLOYEES
 
 puts "Finding or Creating Employees ..."
-employee1 = Employee.create_with(actor: 'Keanu Reeves', image: 'john-wick.jpg').find_or_create_by!(name: 'John Wick')
-employee2 = Employee.create_with(actor: 'Tom Cruise', image: 'jack-reacher.jpg').find_or_create_by!(name: 'Jack Reacher')
-employee3 = Employee.create_with(actor: 'Denzel Washington', image: 'robert-mccall.jpg').find_or_create_by!(name: 'Robert McCall')
-employee4 = Employee.create_with(actor: 'Liam Neeson', image: 'bryan-mills.jpg').find_or_create_by!(name: 'Bryan Mills')
+employee1 = Employee.create_with(actor: 'Keanu Reeves', image: 'john-wick.jpg', position: 'CTO', job_description: 'John relentlessly pursues the stability of the Jungle platform. He endeavors to make a difference in your every day experience with the Jungle platform', email: 'jwick@jungle.com').find_or_create_by!(name: 'John Wick')
+employee2 = Employee.create_with(actor: 'Tom Cruise', image: 'jack-reacher.jpg', position: 'CIO', job_description: 'Jack is always investingating the best ways to solve new problems that arise on the Jungle platform.  He is dedicated to the pursuit of the best way to do everything, though he often flies under the radar, his efforts are a secret legend.', email: 'jreacher@jungle.com').find_or_create_by!(name: 'Jack Reacher')
+employee3 = Employee.create_with(actor: 'Denzel Washington', image: 'robert-mccall.jpg', position: 'CFO', job_description: 'Robert looks to equalize the playing field for clients, customers and vendors.  He takes the time to research the best methodology for a just resolution and pursues the most likely path of success.', email: 'rmccall@jungle.com').find_or_create_by!(name: 'Robert McCall')
+employee4 = Employee.create_with(actor: 'Liam Neeson', image: 'bryan-mills.jpg', position: 'CEO', job_description: 'You probably do not want to talk with Bryan', email: 'bmills@jungle.com').find_or_create_by!(name: 'Bryan Mills')
 
 
 

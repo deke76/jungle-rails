@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 20160625062916) do
     t.string   "name"
     t.string   "image"
     t.string   "actor"
+    t.string   "position"
+    t.string   "job_description"
+    t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
