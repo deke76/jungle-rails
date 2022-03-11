@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   root to: 'products#index'
   
   # Resource based routing
-  #resources :users, only: [:create, :new]
-  #resources :sessions, only: [:new, :create, :destroy]
+  #resources :users, only: [:create]
+  #resources :sessions, only: [:create, :destroy]
+  resources :users, only: [:new]
+  resources :sessions, only: [:new]
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
   resource :cart, only: [:show] do
@@ -20,9 +22,7 @@ Rails.application.routes.draw do
   resources :about, only: [:index]
 
   # Regular Routing
-  get 'signup' => 'users#new'
   post '/users' => 'users#create'
-  get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
