@@ -6,7 +6,8 @@
 
   <div class="well">
     <%= form_for User.new, layout: :horizontal do |f| %>
-      <%= f.text_field :name %>
+      <%= f.text_field :first_name %>
+      <%= f.text_field :last_name%>
       <%= f.email_field :email %>
       <%= f.password_field :password %>
       <%= f.password_field :password_confirmation %>
